@@ -206,14 +206,11 @@ ul {
 
 .features-list {
   display: flex;
+  gap: 30px;
 }
 
 .features-list .item {
-  flex-basis: 25%;
-}
-
-.features-list .item:not(:last-child) {
-  margin-right: 30px;
+  width: calc((100% - 90px) /4);
 }
 
 .features-list .title {
@@ -261,11 +258,11 @@ ul {
 
 .team-list {
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
 }
 
 .team-list .item {
-  width: 270px;
+  width: calc((100% - 90px) / 4);
   border-radius: 0px 0px 4px 4px;
 
   background: var(--white-color);
@@ -365,7 +362,7 @@ ul {
 }
 
 .portfolio-list .item {
-  width: 370px;
+  width: calc((100% - 90px) / 3);
 }
 
 .portfolio-list .img {
