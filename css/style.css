@@ -10,6 +10,8 @@
   --address-link-color: rgba(255, 255, 255, 0.6);
   --border-line-color: #ececec;
   --border-item-color: #eeeeee;
+  --bg-color: #c4c4c4;
+  --icon-color: #afb1b8;
 }
 
 body {
@@ -161,12 +163,23 @@ ul {
   color: var(--accent-text-color);
 }
 
+.contacts-list .header-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* --------------------------------------------hero section */
 
 .hero {
   padding: 200px 0;
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
 
-  background-color: var(--primary-background-color);
+  background-color: var(--bg-color);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
 }
 
 .hero-title {
@@ -209,8 +222,18 @@ ul {
   gap: 30px;
 }
 
+.icon-thumb {
+  background: var(--secondary-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  text-align: center;
+}
+
 .features-list .item {
-  width: calc((100% - 90px) /4);
+  width: calc((100% - 90px) / 4);
 }
 
 .features-list .title {
@@ -266,6 +289,8 @@ ul {
   border-radius: 0px 0px 4px 4px;
 
   background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-list .img {
@@ -291,12 +316,88 @@ ul {
   text-align: center;
 }
 
+.social-network {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 16px 32px 30px 32px;
+  color: var(--icon-color);
+}
+
+.social-network .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--icon-color);
+}
+
+.social-network .link:hover,
+.social-network .link:focus {
+  border-radius: 50%;
+  background-color: var(--accent-text-color);
+  color: var(--white-color);
+}
+
+.social-network .icon {
+  fill: currentColor;
+}
+
+/* --------------------------------------------clients */
+
+.clients .section-title {
+  margin-bottom: 50px;
+}
+
+.clients .clients-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.clients-list .item {
+  width: calc((100% - 150px) / 6);
+  height: 92px;
+}
+
+.clients-list .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+
+  color: var(--icon-color);
+}
+
+.clients-list .link:hover,
+.clients-list .link:focus {
+  border: 1px solid var(--accent-text-color);
+  color: var(--accent-text-color);
+}
+
+.clients-list .icon {
+  fill: currentColor;
+}
+
 /* --------------------------------------------footer */
 
 .footer {
   padding: 60px 0;
 
   background-color: var(--primary-background-color);
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: start;
+}
+
+.address-info {
+  margin-right: 70px;
 }
 
 .address {
@@ -319,6 +420,48 @@ ul {
 .footer-list .link:hover,
 .footer-list .link:focus {
   color: var(--accent-text-color);
+}
+
+.join-in-block {
+  padding-top: 12px;
+}
+
+.join-in-title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.icons-list {
+  list-style: none;
+  display: flex;
+}
+
+.icons-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.icons-list .link {
+  display: block;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white-color);
+}
+
+.icons-list .link:hover,
+.icons-list .link:focus {
+  background: var(--accent-text-color);
+}
+
+.icons-list .icon {
+  fill: currentColor;
 }
 
 /* --------------------------------------------portfolio */
@@ -349,6 +492,8 @@ ul {
 .portfolio-filter .radio-btn:focus {
   color: var(--white-color);
   background-color: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-filter .item:not(:last-child) {
@@ -362,7 +507,13 @@ ul {
 }
 
 .portfolio-list .item {
-  width: calc((100% - 90px) / 3);
+  width: calc((100% - 60px) / 3);
+}
+
+.portfolio-list .item:hover,
+.portfolio-list .item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-list .img {
