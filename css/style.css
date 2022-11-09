@@ -223,13 +223,13 @@ ul {
 }
 
 .icon-thumb {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--secondary-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-
-  text-align: center;
 }
 
 .features-list .item {
@@ -297,8 +297,11 @@ ul {
   display: block;
 }
 
+.team-list .item-name {
+  padding: 30px 32px;
+}
+
 .team-list .title {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   color: var(--secondary-text-color);
@@ -309,7 +312,7 @@ ul {
 }
 
 .team-list .subtitle {
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
@@ -320,7 +323,6 @@ ul {
   display: flex;
   gap: 10px;
   list-style: none;
-  padding: 16px 32px 30px 32px;
   color: var(--icon-color);
 }
 
